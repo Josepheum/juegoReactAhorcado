@@ -1,14 +1,35 @@
 import logo from './logo.svg';
 import './Integrantes.css';
+import DatosIntegrantes from './DatosIntegrantes'
+import './Juego.css';
+import './DatosIntegrantes.css';
+
+
 
 function Integrantes() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p> Integrantes </p>
-      </header>
-    </div>
+	<body className="cuerpo">
+			<div className="juego">
+				<header className="encabezado">
+					<h1 className="titulo"> Integrantes </h1>
+				
+			
+
+				</header>
+				
+				<div className="App">
+					<div className="container">
+						<DatosIntegrantes />
+				</div>
+				</div>
+    	
+			</div>
+				
+
+	</body>
+	
+	
+
   );
 }
 

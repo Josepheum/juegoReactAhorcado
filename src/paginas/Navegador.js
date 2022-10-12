@@ -5,18 +5,16 @@ import {NavLink} from 'react-router-dom';
 export default function Navegador() {
   return (
   
-  <div>
-	<ul>
-		<li>
-			<NavLink className={({isActive}) => isActive ? "activo" : "negro"}to='/inicio'>Inicio< /NavLink>
-		</li>
-		<li>
-			<NavLink className={({isActive}) => isActive ? "activo" : "negro"}to='/juego'>Juego< /NavLink>
-		</li>
-		<li>
-			<NavLink className={({isActive}) => isActive ? "activo" : "negro"}to='/integrantes'>Integrantes </NavLink>
-        </li>
-    </ul>
+  <div className="navegador">
+	<div className="item">
+			<NavLink className={({isActive}) => isActive ? "active" : "white"}to='/'>Inicio< /NavLink>
+	</div>
+	<div className="item">
+			<NavLink className={({isActive}) => isActive ? "active" : "white"}to='/ahorcado'>Juego< /NavLink>		
+    </div>
+	<div className="item">
+			<NavLink className={({isActive}) => isActive ? "activo" : "white"}to='/integrantes'>Integrantes< /NavLink>
+	</div>
   </div>
   
   );
